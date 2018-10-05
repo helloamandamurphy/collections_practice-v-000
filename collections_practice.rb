@@ -1,4 +1,3 @@
-
 def sort_array_asc(array)
   array.sort
 end
@@ -27,7 +26,6 @@ def kesha_maker(array)
   kesha_d = []
   array.each do |element|
     element_array = element.split ""
-    binding.pry
     element_array[2] = "$"
     kesha_d << element_array.join
   end
