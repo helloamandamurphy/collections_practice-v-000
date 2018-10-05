@@ -23,12 +23,11 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  i = 0 
-  while i < array.length 
-  yield (array[i])
-  i += 1 
+  kesha_d = []
+  array.each do |element|
+    kesha_d << element[2] = "$"
   end
-array
+  kesha_d
 end
 
   #array.collect do |element|
