@@ -23,9 +23,17 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.collect do |element|
-    binding.pry
-    element[2]= "$"
+  i = 0 
+  while i < array.length 
+  yield (array[i])
+  i += 1 
+  end
+array
+end
+
+  #array.collect do |element|
+    #binding.pry
+    #element[2]= "$"
   end
 end
 
