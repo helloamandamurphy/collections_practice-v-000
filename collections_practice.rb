@@ -25,6 +25,8 @@ end
 def kesha_maker(array)
   kesha_d = []
   array.each do |element|
+    element_array = element.split ""
+    element_array[2] = "$"
     element[2]="$"
     >>kesha_d
   end
