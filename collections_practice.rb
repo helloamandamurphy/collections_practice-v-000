@@ -10,10 +10,11 @@ def sort_array_char_count(array)
   sorted_array = array.sort {|left,right| left.length <=> right.length}
 end
 
-def swap_elements
-  def swap_elements_to(array,index,destination_index)
-    array.insert(index)
+def swap_elements(array)
+  def swap_elements_from_to(array,index,destination_index)
+    array[index] = array[destination_index]
   end
+  swap_elements_from_to(array,1,2)
 end
 
 def reverse_array(array)
